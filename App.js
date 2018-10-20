@@ -1,5 +1,6 @@
 import HomeScreen from './HomeScreen.js'
-import RecordSelect from './RecordSelect.js'
+import CateSelect from './CateSelect.js'
+import Moves from './Moves.js'
 import React from 'react';
 
 import {
@@ -8,7 +9,8 @@ import {
 
 const RootStack = createStackNavigator({
   Home: { screen: HomeScreen },
-  AddRecord: { screen: RecordSelect },
+  AddRecord: { screen: CateSelect },
+  Moves:{ screen: Moves }
 });
 
 export default class App extends React.Component {
