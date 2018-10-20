@@ -11,7 +11,7 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
       <Button
-          title="Add Category"
+          title="Add Move"
         />
         <Button
           title="Add Record"
