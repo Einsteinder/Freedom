@@ -3,25 +3,22 @@ import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import { Button } from 'react-native-elements';
 
 
-export default class Moves extends React.Component {
+export default class CountChoose extends React.Component {
     static navigationOptions = {
-      title: 'Moves',
+      title: 'How Many',
     };
     render() {
       const { navigate,moves } = this.props.navigation;
       const { params } = this.props.navigation.state;
-
+      const number = [
+          6,8,10,12,14,16,18,20
+      ]
       return (
     <View style={styles.container}>
     {
-        params.moves.map(move =>
-        <Button key = {move}
-          title = {move}
-          onPress={() =>
-            navigate('CountChoose',{
-              move: move,
-            })
-          }
+        number.map(n =>
+        <Button key = {n}
+          title = {n}
         />)
     }
     
